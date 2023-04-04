@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='min-h-screen'>
+      <main className='min-h-screen bg-gradient-to-b from-[#F1ECEC] to-white w-full '>
         <div className='bg-white py-8 drop-shadow-md'>
           <div className='flex justify-end space-x-4 pr-8'>
             <button 
@@ -31,7 +31,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-          <div className='w-full flex justify-center space-x-4 items-center h-full '>
+          <div className='flex justify-center space-x-8 items-center h-full mt-8'>
             <div>
               <Image
                 className='rounded-full border-[#F2511B] border-2'
@@ -42,9 +42,9 @@ export default function Home() {
                 priority
               />
             </div> 
-            <div className='w-1/2 text-4xl text-[#F2511B]'>
-            <p>Salut, moi c’est Nolwen ! </p>
-            <p> Apprenante développeuse full stack à ADA Tech School, designer de formation. </p>
+            <div className='w-3/12 text-2xl text-[#F2511B]'>
+            <p className='font-thin text-xl'>Salut, moi c’est Nolwen ! </p>
+            <p>Apprenante <b>développeuse</b> full stack à ADA Tech School, <b>designer</b> de formation. </p>
             </div>
           </div>
       </main>
