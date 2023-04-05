@@ -1,8 +1,10 @@
-
+import Header from "@/components/Header"
 
 export default function Apropos (){
     return(
-        <div className="w-full min-h-screen flex justify-center items-center">
+        <>
+        <Header/>
+        <div className="w-full min-h-screen flex justify-center pt-12 bg-slate-50">
         <div className="flex flex-col w-1/2 space-y-6">
         <h1 className="text-4xl text-[#F2511B] font-medium">A PROPOS </h1>
         <h2>  🚦POINT DE DÉPART : LE DESIGN  </h2>
@@ -27,5 +29,6 @@ export default function Apropos (){
         <p>Pour en savoir plus sur mon parcours professionnel et compétences c’est ici  : </p>
         </div>
         </div>
+        </>
     )
 }

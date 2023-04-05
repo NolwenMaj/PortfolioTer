@@ -1,11 +1,14 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Header from '@/components/Header'
+import Home from '@/components/Home'
+import Test from '@/components/Test'
+import Spaces from '@/components/Spaces'
+/* import Projects from '@/components/Projects' */
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <Head>
@@ -14,40 +17,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='min-h-screen bg-gradient-to-b from-[#F1ECEC] to-white w-full '>
-        <div className='bg-white py-8 drop-shadow-md'>
-          <div className='flex justify-end space-x-4 pr-8'>
-            <button 
-              className='bg-[#F2511B] p-4 text-center hover:bg-[#F1ECEC] hover:text-[#F2511B] rounded-full drop-shadow-md'>
-              Nolwen MAJOR FRANCES
-            </button>
-            <button 
-              className='bg-[#F2511B] p-4 text-center hover:bg-[#F1ECEC] hover:text-[#F2511B] rounded-full drop-shadow-md'>
-              projets
-            </button>
-            <button 
-              className='bg-[#F2511B] p-4 text-center hover:bg-[#F1ECEC] hover:text-[#F2511B] rounded-full drop-shadow-md'>
-              à propos
-            </button>
-          </div>
-        </div>
-          <div className='flex justify-center space-x-8 items-center h-full mt-8'>
-            <div>
-              <Image
-                className='rounded-full border-[#F2511B] border-2'
-                src="/autoportrait.png"
-                alt="Portrait dessine de Nolwen Major Frances"
-                width={200}
-                height={200}
-                priority
-              />
-            </div> 
-            <div className='w-3/12 text-2xl text-[#F2511B]'>
-            <p className='font-thin text-xl'>Salut, moi c’est Nolwen ! </p>
-            <p>Apprenante <b>développeuse</b> full stack à ADA Tech School, <b>designer</b> de formation. </p>
-            </div>
-          </div>
-      </main>
+      <Header/>
+      <Home/>
+      <Spaces/>
+      <Test/>
+      <Spaces/>
+      {/* <Projects/> */}
     </>
   )
 }

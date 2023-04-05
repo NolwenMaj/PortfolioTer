@@ -2,7 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+button {
+  background-color: #F2511B;
+  color: rgb(0 0 0);
+  text-align: text-center ; 
+  padding: 1rem ;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.5);
+  transition-duration:600ms;
+}
+
+button:hover {
+  background-color: #F1ECEC ;
+  color :#F2511B;
+  box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+}
+
+
+ /*hover:shadow-inner rounded-full drop-shadow-md' */
+
+#testImage {
+  clip-path: polygon(100% 10%, 98% 8%, 96% 6%, 93% 6%, 89% 6%, 86% 5%, 84% 5%, 80% 3%, 78% 3%, 75% 3%, 72% 3%, 69% 3%, 67% 4%, 64% 5%, 63% 7%, 61% 7%, 58% 8%, 54% 9%, 53% 9%, 50% 9%, 47% 9%, 46% 9%, 45% 9%, 43% 9%, 42% 9%, 40% 9%, 39% 10%, 35% 11%, 31% 15%, 27% 19%, 25% 20%, 22% 20%, 22% 22%, 18% 26%, 18% 27%, 18% 28%, 18% 32%, 18% 33%, 18% 37%, 18% 38%, 17% 40%, 17% 43%, 15% 44%, 15% 47%, 13% 51%, 13% 53%, 13% 55%, 14% 60%, 16% 64%, 16% 64%, 19% 67%, 19% 72%, 19% 72%, 19% 74%, 19% 79%, 21% 83%, 30% 84%, 32% 85%, 39% 86%, 45% 88%, 47% 89%, 52% 95%, 59% 97%, 63% 99%, 67% 100%, 73% 100%, 81% 100%, 90% 100%, 95% 100%, 100% 100%);}
+
+.testPolygone {
+    width: 300px;
+    height: 300px;
+    background-color : #16abff33;
+    /* background-image : src("/ACCUEIL.png"); */
+    
+    animation: 5s poly infinite alternate ease-in-out;
+    margin: 1em auto;
+    display: block;
+  }
+  
+@keyframes poly {
+  from {
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  
+  to {
+      clip-path: polygon(44% 26%, 58% 38%, 58% 38%, 44% 81%, 44% 81%, 25% 49%);
+  }
+}
+  
+
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -108,5 +152,5 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */
 
