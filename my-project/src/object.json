@@ -1,0 +1,281 @@
+[
+    {
+
+    "id" :6 ,
+
+    "title" : "Môla Môla"  ,
+    
+    "type" : "jeu" ,
+    
+    "themes" : ["conception des mécanismes", "illustration","graphisme"] , 
+    
+    "year" : 2020,
+    
+    "subtitle" :"en cours" ,
+    
+    "colleagues" :["Jules Zimmermann"],
+    
+    "mainText" : "Selon la légende, le poisson lune (surnommé le Môla Môla) puiserait sa force de 5 météorites lunaires échouées au fond de l’océan. Mais les météorites ont été volés par des pilleurs. Morts avant d’avoir pu remonter à la surface, les météorites sont aujourd’hui brisées et dispersées dans les fonds marins. L’équilibre de l’océan est rompu. Le poisson lune est à l’agonie et les autres animaux sont devenus très agressifs, attaquant marins et baigneurs imprudents. Vous devez sauver le Môla Môla ! Avant la prochaine pleine lune, vous devez reconstituer les météorites et les restituer au poisson lune, tout au fond de l’océan. Saurez-vous collaborer, en alliant prise de risque et prudence ? Type : collaboratif / Format du jeu: cartes et dés / Durée d’une partie : environ 1 heure / Nombre de joueu·r·se·s possible : 3-5",
+
+    "image1" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/molaMola1.jpg",
+
+    "image2" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/molaMola2.jpg",
+
+    "image3" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/molaMola3.jpg",
+
+    "image4" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/molaMola4.jpg",
+    
+    "image5" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/molaMola5.jpg"
+    
+}, {   
+    "id" :1,
+    "title" : "LA FABRIQUE DE LA VILLE, engager une participation capacitante"  ,
+    
+    "type" : "recherches" ,
+    
+    "themes" : ["urbanisme"] ,
+    
+    "year" : 2018,
+    
+    "subtitle" :"mémoire de DNSEP à l’ESAD Valenciennes" ,
+    
+    "mainText" :"On constate depuis une dizaine d’années un foisonnement d’initiatives proposant au citoyen·ne, habitant·e ou usager·e de faire partie et, parfois même, prendre part à la fabrique de la ville, avec des budgets participatifs, consultations, concertations, ateliers et chantiers participatifs. Témoins d’un renouvellement certain du champ démocratique, toutes ces pratiques n’en demeurent pas moins l’objet croissant d’interrogations, voire de critiques. À la fin des années 60, dans son article « Une échelle de la participation », Sherry Arnstein a proposé un regard critique sur les pratiques participatives qu’elle observait. Si comme elle l’avance, la participation citoyenne doit tendre à une maîtrise citoyenne, comment penser et pratiquer une fabrique de la ville participative qui ne serait pas superficielle ? Ce mémoire se propose sur la base de lectures, d’observations et de rencontres, d’analyser ce qui me parait manquer aux pratiques participatives contemporaines. Au lieu d’être un outil pour le citoyen·ne, la participation instrumentalise celui-ci dans une validation factice du projet. Trop souvent, elle favorise une illusion démocratique plutôt que d’engager des débats, s’enrichir de désaccords et questionner la démocratie elle-même. La participation doit être capacitante et non instrumentalisante.",
+
+    "image1" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/memoire1.jpg",
+
+    "image2" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/memoire2.jpg",
+
+    "image3" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/memoire3.jpg",
+
+    "image4" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/memoire4.jpg"
+    
+},{
+
+
+    "id" :2,
+
+    "title" : "Les Récréateurs"  ,
+    
+    "type" : "outils de participation citoyenne" ,
+
+    "link": "https://fc-plugincity.tumblr.com/post/179249799467/ddw-2018-in-the-vertical-gallery-les-r%C3%A9cr%C3%A9ateurs",
+    
+    "themes" : ["jeu","illustration","graphisme","maquettes","urbanisme","conception des mécanismes"] ,
+    
+    "year" : 2018,
+    
+    "subtitle" :"Projet de DNSEP à l'ESAD Valenciennes. Ce projet a été mené suites à des recherches théoriques d’une part sur la ville récréative, le territoire et la place de l’enfant dans celui-ci et de l’autre la participation citoyenne, ses enjeux et les outils la facilitant. " ,
+    
+    "colleagues" :["Rémi Mahieux"],
+    
+    "mainText" :"Nous souhaitions mettre notre projet à l’épreuve de la réalité, ainsi nous sommes nous impliqués dans la ville d’Anzin, qui de par sa proximité à Valenciennes, nous était à la fois familière et facile d’accès. Notre projet se découpe en cinq étapes : enquêter, rencontrer, déconstruire, imaginer et construire. Sous la forme de jeux de société et de construction, de contenus graphiques et de maquettes nous avons cherché à raconter notre parcours, le processus, les outils développées en tant que collectif de designer souhaitant mettre en place un dispositif de participation autour de la thématique de l’aire de jeux.",
+
+    "image1" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/recreateurs1.jpg",
+
+    "image2" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/recreateurs2.jpg",
+
+    "image3" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/recreateurs3.jpg",
+
+    "image4" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/recreateurs4.jpg",
+
+    "image5" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/recreateurs5.jpg"
+    
+},{
+
+    "id" :3 ,
+    "title" : "LES P’TITS JEUX DU PAVILLON"  ,
+    
+    "type" : "jeux" ,
+    
+    "themes" : ["illustration","graphisme"] ,
+    
+    "year" : 2019,
+    
+    "subtitle" :"conçu dans le cadre d’un service-civique auprès de l’association ICI!" ,
+    
+    "mainText" :"Les p’tits jeux du Pavillon est un ensemble de trois jeux ayant pour but de promouvoir le Pavillon en Chantier, sa programmation et sa place dans le quartier. De 5, 10 et 15 minutes, adaptés à différentes tranches d’âges et inspirés de jeux d’animations existants, ils servent de supports de rencontre lors d’évènements.",
+
+    "image1" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/LesPtitsJeuxDuPavillon1.jpg",
+
+    "image2" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/LesPtitsJeuxDuPavillon2.jpg",
+
+    "image3" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/LesPtitsJeuxDuPavillon3.jpg"
+    
+},{
+    "id" :4,
+    "title" : "PLACES AUX FEMMES"  ,
+    
+    "type" : "jeu" ,
+
+    "link": "https://ville-jeux.com/Places-aux-femmes.html#myCarousel",
+    
+    "themes" : ["conception des mécanismes","illustration","graphisme","urbanisme"] ,
+    
+    "year" : 2019,
+    
+    "subtitle" :"Jeu pour engager des dialogues sur des problématiques du territoire avec les habitant·e·s., réalisé dans le cadre d'un service civique auprès de l’association ICI! " ,
+    
+    "colleagues" :["Sabrina Chatouani"],
+    
+    "mainText" :"Places aux Femmes est un jeu collaboratif s’inspirant des mécanismes du jeu Pandemic. Il questionne la place des femmes dans l’espace public, plus particulièrement dans le quartier Sud de l’Île-Saint-Denis et invite les participant·e·s à exprimer leurs ressentis sur des lieux donnés et ce qu’ils ou elles souhaiteraient voir évoluer. Format du jeu: plateau / Durée d’une partie : entre 30 et 45 minutes / Nombre de joueu·r·se·s  possible : 2-8",
+
+    "image1" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/PlacesAuxFemmes1.jpg",
+
+    "image2" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/PlacesAuxFemmes2.jpg",
+
+    "image3" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/PlacesAuxFemmes3.jpg",
+
+    "image4" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/PlacesAuxFemmes4.jpg"
+    
+},{
+    "id" :5,
+
+    "title" : "Cadences.webflow"  ,
+    
+    "type" : "site web" ,
+
+    "link": "https://cadences.webflow.io/",
+    
+    "themes" : ["UX/UI","No-code","graphisme"] ,
+    
+    "year" : 2020,
+    
+    "mainText" :" L’association Cadences propose un parcours d’apprentissage individuel et collectif, qui vise à accompagner les personnes dans leur découverte de soi, des autres et du monde. Il est une chance offerte à chacun.e de prendre le temps et l’espace pour questionner son parcours et la société dans laquelle il·elle évolue.",
+
+    "image1" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/cadences1.png",
+
+    "image2" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/cadences2.png",
+
+    "image3" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/cadences3.png"
+    
+},{
+    "id" :7 ,
+    "title" : "XO^4"  ,
+    
+    "type" : "jeu vidéo" ,
+
+    "link": "https://www.lexaloffle.com/bbs/?tid=50032",
+
+    "github" :"https://github.com/NolwenMaj/pico8-Joanne-Jeremy-Nolwen",
+    
+    "themes" : ["Lua","Pico 8"] ,
+    
+    "year" : 2022,
+    
+    "subtitle" :"dans le cadre de notre formation à ADA Tech School." ,
+    
+    "colleagues" :["Jeremy Zynger","Joanne Longeville"],
+    
+    "mainText" :"Puissance 4 et Morpion revisités en micro jeu retro sur Pico8. Jeu de rôle vu du dessus un jardinier vs un promoteur veulent être le premier à transformer du champ en une suite (colonne, ligne ou diagonale) de champs en jardins ou immeubles.",
+
+    "image1" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/pico81.png",
+
+    "image2" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/pico82.png",
+
+    "image3" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/pico83.png"
+    
+},{
+    "id" :8 ,
+
+    "title" : "Quelle grosse marade"  ,
+    
+    "type" : "page web" ,
+
+    "github" :"https://github.com/NolwenMaj/projet_collectif_dataviz-alter",
+    
+    "themes" : ["HTML","CSS","JS","Front"] ,
+    
+    "year" : 2022,
+    
+    "subtitle" :"dans le cadre de notre formation à ADA Tech School." ,
+    
+    "colleagues" :["Marie Koscianski-Ducharlet ","Helder Neves Da Silva Ferreira "],
+    
+    "mainText" :"Page web faisant appel à plusieurs APIs publiques et expérimentations d’animations CSS.",
+
+    "image1" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/dataviz1.png",
+
+    "image2" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/dataviz2.png",
+
+    "image3" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/dataviz3.png"
+    
+},{
+    "id" :9 ,
+    "title" : "Memory"  ,
+    
+    "type" : "jeu numérique" ,
+
+    "github" :"https://github.com/NolwenMaj/Memory",
+    
+    "themes" : ["HTML","CSS","JS","Front","illustration"] ,
+    
+    "year" : 2022,
+    
+    "subtitle" :"dans le cadre de notre formation à ADA Tech School." ,
+    
+    "colleagues" :["Hortense Laclavière "],
+    
+    "mainText" :"Memory pour 2 à 4 joueur.euse.s.",
+
+    "image1" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/memory1.png",
+
+    "image2" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/memory2.png",
+
+    "image3" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/memory3.png"
+
+},{
+    "id" :10 ,
+
+    "title" : "Tomato Timer"  ,
+    
+    "type" : "extension de navigateur Chrome" ,
+
+    "github" :"https://github.com/NolwenMaj/projet_collectif_extension_navigateur-gregor-jeremy-nolwen",
+    
+    "themes" : ["HTML","CSS","JS","Front"] ,
+    
+    "year" : 2023,
+    
+    "subtitle" :"dans le cadre de notre formation à ADA Tech School." ,
+    
+    "colleagues" :["Jeremy Zynger"," Gregor Bechet "],
+    
+    "mainText" :"Gestion de temps de travail basé sur la méthode Pomodoro qui restreint l'accès aux réseaux sociaux lors des périodes de concentration. To do list intégrée dans le pop-up du navigateur.",
+
+    "image1" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/TomatoTimer1.png",
+
+    "image2" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/TomatoTimer2.png",
+
+    "image3" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/TomatoTimer3.png"
+}, {
+    "id" :11 ,
+    
+    "title" : "retrovibe"  ,
+
+    "link" : "https://retrovibes.herokuapp.com/home",
+    
+    "type" : "site e-commerce" ,
+
+    "github" :"https://github.com/adatechschool/projet_collectif_vente_de_meubles-front-team_retrovibe",
+    
+    "themes" : ["HTML","CSS","JS","Front","React","Laravel","Tailwind","Figma","Back"] ,
+    
+    "year" : 2023,
+    
+    "subtitle" :"dans le cadre de notre formation à ADA Tech School." ,
+    
+    "colleagues" :["Jeremy Zynger", "Pierre Merlaud", "Isabelle Yi", "Léon Yi", "Sandy Dambreville","Johan Anquetil", "Helder Neves Da Silva Ferreira "],
+    
+    "mainText" :"Cahier des charges : 'Lauréline Fleury a lancé son entreprise “Anciens meubles pour une nouvelle vie”, de vente de meubles de seconde main. Pour gagner en visibilité, elle a besoin d’avoir un site internet pour afficher ses produits. En plus, cela lui permettra de gérer son stock. Son besoin est donc le suivant : J’ai besoin d’avoir une page principale qui regroupera les meubles en vente en ce moment. Pour l’affichage de chaque meuble, je souhaite un encart dans lequel on pourra retrouver une photo, le type de meuble, le prix et un bouton pour l’acheter. Chaque encart sera cliquable pour permettre d’accéder au détail du produit. Sur cette nouvelle page, on retrouvera une série de photos du meuble et toutes les informations nécessaires, c’est-à-dire, le type, le prix, les dimensions, les couleurs, les matières et bien sûr un bouton pour acheter. Pour ce qui est de l’administration, je souhaite une page de connexion. Lorsque je suis connectée je dois pouvoir accéder à une page de gestion des produits. Sur celle-ci je veux pouvoir avoir la liste de mes meubles. Je souhaite pouvoir modifier les informations de mes produits en ayant un bouton depuis ma liste. Je dois pouvoir également les supprimer s’ils ont été vendus en magasin.' Langage : libre et soumis au vote des équipes, utilisation d’un framework pour le back. Équipes : imposées (le groupe se sépare en deux équipes, une qui commencera par travailler sur le front-end et l’autre sur le back-end, puis les deux équipes inverseront à la fin de la première semaine)",
+
+    "image1" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/retrovibe1.png",
+
+    "image2" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/retrovibe2.png",
+
+    "image3" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/retrovibe3.png",
+
+    "image4" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/retrovibe4.png",
+
+    "image5" : "https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/retrovibe5.png"
+}
+]

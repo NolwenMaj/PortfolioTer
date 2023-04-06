@@ -3,8 +3,8 @@
 export default function Test(){
     return(
       <>
-        <div id="firstSection" className="h-24"></div>
-      <div className=" flex sm:flex-row pl-24 py-10 flex-col"> 
+      <div id="sectionProjets" className="h-24"></div>
+      <div className=" flex sm:flex-row pl-24 py-10 flex-col justify-between"> 
       <div  className='w-[50%] text-xl text-[#F2511B] flex flex-col justify-center gap-2'>
               <div className="flex flex-col flex-wrap gap-2">
                 <h1 className="text-6xl font-bold">(TITLE)</h1>
@@ -24,12 +24,9 @@ export default function Test(){
                 <button className="py-1 ">(link)</button>
               </div>
             </div>
-      <div className="w-1/2 h-[50vh] justify-end items-center">
-        <div className="" id="testImage">
-           <img className="border-2 "src="/ACCUEIL.png"></img> 
-        </div>
-      </div>
+           <img id="testImage2" className="border-2 max-w-[40%] h-[80vh] overflow-clip object-cover object-center" src="/ACCUEIL.png"></img> 
       </div>
       </>
     )
 }
+
