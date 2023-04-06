@@ -5,6 +5,7 @@ import Home from '@/components/Home'
 import Spaces from '@/components/Spaces'
 import Projects from '@/components/Projects'
 import Apropos from '@/components/apropos' 
+import ButtonTop from '@/components/ButtonTop'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,11 +13,12 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>Portfolio Nolwe Major Francès</title>
+        <title>Portfolio Nolwen Major Francès</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
+      <ButtonTop/>
       <Home/>
       <Spaces/>
       <Projects/> 
