@@ -10,8 +10,8 @@ export default function Projects() {
       <div className="flex flex-col-reverse">
         
             { projets.map((projet) => ( 
-              <>
-                <div className="flex sm:flex-row sm:pl-32 sm:py-10 flex-col-reverse items-center sm:justify-between my-20"> 
+              <div key={projet.id}>
+                <div  className="flex sm:flex-row sm:pl-32 sm:py-10 flex-col-reverse items-center sm:justify-between my-20"> 
                   <div  className='w-2/3 sm:w-[50%] text-xl text-[#F2511B] flex flex-col justify-center gap-2'>
                     <div className="flex flex-col flex-wrap gap-2">
                       <h1 className="text-4xl sm:text-6xl font-bold">{projet.title}</h1>
@@ -49,7 +49,7 @@ export default function Projects() {
                   <img id="testImage2" className=" h-[30vh] mb-4 sm:mb-0 ml-8 sm:ml-0 sm:border-2 sm:max-w-[40%] sm:h-[80vh] sm:overflow-clip object-cover object-center" src={projet.image1} alt="visuel principal de l'article"></img> 
                 {/*</a> */} 
              </div>
-            </>
+            </div>
            ))}
          </div>
     </div>
