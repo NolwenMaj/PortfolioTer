@@ -2,11 +2,8 @@ import Link from "next/link"
 
 export default function Header (){
     return(
-      <div className='bg-white py-6 drop-shadow-md sticky top-0 z-10'>
+      <div className='bg-white py-2 sm:py-6 drop-shadow-md sticky top-0 z-10'>
           <div className='flex justify-end space-x-4 pr-8'>
-{/*           <Link href="#sectionTop">
-            <button>Nolwen MAJOR FRANCES</button>
-          </Link> */}
           <Link href="#sectionProjets">
             <button> projets</button>
           </Link>
