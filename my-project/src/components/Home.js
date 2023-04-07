@@ -10,7 +10,7 @@ export default function Home(){
               <div className='flex flex-row justify-center items-center w-1/2 '>
                 <div className='bg-white flex flex-col sm:flex-row items-center justify-center space-y-8 sm:space-x-8 sm:p-24 p-12 rounded-2xl box-content'>
                   <Image
-                    className='max-w-[40%] rounded-full border-[#F2511B] border-2 contain'
+                    className='sm:max-w-[40%] rounded-full border-[#F2511B] border-2 contain w-2/3 h-2/3 '
                     src="https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/autoportrait.PNG" 
                     width={300}
                     height={300}
