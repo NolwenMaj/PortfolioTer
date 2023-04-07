@@ -17,8 +17,8 @@ export default function Projects() {
                       <h1 className="text-4xl sm:text-6xl font-bold">{projet.title}</h1>
                       <div className="flex sm:flex-row flex-col sm:items-center items-start">
                         <h2 className="text-xl sm:text-2xl">{projet.type}</h2>
-                        <div className="space-x-2">
-                          {projet.github && <a target="_blank" href={projet.github}><button className="sm:ml-10 text-xs py-1 object-contain"><input className="w-6" type="image" src="../pictoGit.png" /></button></a>}
+                        <div className="sm:ml-10 space-x-2">
+                          {projet.github && <a target="_blank" href={projet.github}><button className=" text-xs py-1 object-contain"><input className="w-6" type="image" src="../pictoGit.png" /></button></a>}
                           {projet.link && <a target="_blank" href={projet.link}><button className="text-xs py-1 text-black">https://</button></a>}
                         </div>
                       </div>
