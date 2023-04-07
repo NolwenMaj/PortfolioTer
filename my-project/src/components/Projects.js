@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import Image from 'next/image'
 import data from '../object.json';
 
 export default function Projects() {
@@ -17,9 +18,9 @@ export default function Projects() {
                       <h1 className="text-4xl sm:text-6xl font-bold">{projet.title}</h1>
                       <div className="flex sm:flex-row flex-col sm:items-center items-start">
                         <h2 className="text-xl sm:text-2xl">{projet.type}</h2>
-                        <div className="sm:ml-10 space-x-2">
-                          {projet.github && <a target="_blank" href={projet.github}><button className=" text-xs py-1 object-contain"><input className="w-6" type="image" src="../pictoGit.png" /></button></a>}
-                          {projet.link && <a target="_blank" href={projet.link}><button className="text-xs py-1 text-black">https://</button></a>}
+                        <div className="sm:ml-10 space-x-2 flex flex-row align-middle">
+                          {projet.github && <a target="_blank" href={projet.github}><button className="h-9 py-1 text-center"><input className="h-[90%]" type="image" src="../pictoGit.png" /></button></a>}
+                          {projet.link && <a target="_blank" href={projet.link}><button className="h-9 py-1 text-center align-middle">🌐</button></a>}
                         </div>
                       </div>
                       <p className="text-sm sm:text-lg font-light">{projet.year}{projet.colleagues && <span> - avec <a target="_blank" href={projet.linkColleagues}>{projet.colleagues}</a></span>} {projet.subtitle && <span> - {projet.subtitle}</span>}</p>
@@ -46,7 +47,14 @@ export default function Projects() {
                     </div>
                   </div>
                 {/*<a target="_blank" href={`/${projet.title}`}> */}
-                  <img id="testImage2" className=" h-[30vh] mb-4 sm:mb-0 ml-8 sm:ml-0 sm:border-2 sm:max-w-[40%] sm:h-[80vh] sm:overflow-clip object-cover object-center" src={projet.image1} alt="visuel principal de l'article"></img> 
+                <Image 
+                  id="testImage2" 
+                  className=" h-[30vh] mb-4 sm:mb-0 ml-8 sm:ml-0 sm:border-2 sm:max-w-[40%] sm:h-[80vh] sm:overflow-clip object-cover object-center" 
+                  src={projet.image1}
+                  width ={2000} 
+                  height ={2000} 
+                  alt="visuel principal de l'article"
+                /> 
                 {/*</a> */} 
              </div>
             </div>
