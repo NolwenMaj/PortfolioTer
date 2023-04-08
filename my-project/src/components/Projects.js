@@ -13,14 +13,14 @@ export default function Projects() {
             { projets.map((projet) => ( 
               <div key={projet.id}>
                 <div  className="flex sm:flex-row sm:pl-32 sm:py-10 flex-col-reverse items-center sm:justify-between my-20"> 
-                  <div  className='w-2/3 sm:w-[50%] text-xl text-[#F2511B] flex flex-col justify-center gap-2'>
+                  <div  className='w-3/4 sm:w-[50%] text-xl text-[#F2511B] flex flex-col justify-center gap-2'>
                     <div className="flex flex-col flex-wrap gap-2">
                       <h1 className="text-4xl sm:text-6xl font-bold">{projet.title}</h1>
-                      <div className="flex sm:flex-row flex-col sm:items-center items-start">
+                      <div className="flex flex-row items-center ">
                         <h2 className="text-xl sm:text-2xl">{projet.type}</h2>
-                        <div className="sm:ml-10 space-x-2 flex flex-row align-middle">
-                          {projet.github && <a target="_blank" href={projet.github}><button className="h-9 py-1 text-center"><input className="h-[90%]" type="image" src="../pictoGit.png" /></button></a>}
-                          {projet.link && <a target="_blank" href={projet.link}><button className="h-9 py-1 text-center align-middle">🌐</button></a>}
+                        <div className="ml-8 space-x-2 flex flex-row text-xs">
+                          {projet.github && <a target="_blank" href={projet.github}><button className="">{/* <input className="" type="image" src="../pictoGit.png" /> */}GIT</button></a>}
+                          {projet.link && <a target="_blank" href={projet.link}><button className="">SITE</button></a>}
                         </div>
                       </div>
                       <p className="text-sm sm:text-lg font-light">{projet.year}{projet.colleagues && <span> - avec <a target="_blank" href={projet.linkColleagues}>{projet.colleagues}</a></span>} {projet.subtitle && <span> - {projet.subtitle}</span>}</p>
