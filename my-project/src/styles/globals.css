@@ -6,7 +6,7 @@ button {
   background-color: #F2511B;
   color: rgb(0 0 0);
   text-align: text-center ; 
-  padding: 1rem ;
+  padding: 0.75rem ;
   border-radius: 9999px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.5);
   transition-duration:600ms;
