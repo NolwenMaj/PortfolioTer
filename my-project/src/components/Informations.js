@@ -3,10 +3,10 @@ import Icon from '@mdi/react';
 import { mdiArrowTopRight } from '@mdi/js';
 
 
-export default function Infos(){
+export default function Informations(){
     return(
         <>
-            <div id="sectionApropos" className="w-full min-h-screen flex py-12 justify-center">
+            <div id="sectionApropos" className="font-display w-full min-h-screen flex py-12 justify-center">
                 <div className="flex flex-col justify-center items-center w-2/3 space-y-24">
                         <div className="flex sm:flex-row flex-col gap-4">
                             <div className="flex sm:flex-row flex-col sm:items-center items-start gap-6">

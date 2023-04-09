@@ -5,7 +5,7 @@ export default function Home(){
     return(
       <>
       <div className="absolute top-0" id="sectionTop"></div>
-      <div  className='relative h-screen flex justify-start' >
+      <div  className='font-display relative h-screen flex justify-start' >
         <div className='h-full w-full bg-[url("https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/backgroundPictos.jpg")] bg-cover bg-no-repeat bg-center'>
           <div  className=' bg-white/75 h-full w-full flex items-center justify-center'>
               {/* <div className='flex flex-row justify-center items-center w-1/2 '> */}
@@ -20,8 +20,8 @@ export default function Home(){
                   />
                   </div>
                 <div className='sm:max-w-[50%] text-center sm:text-left sm:text-2xl text-xl text-[#F2511B]'>
-                  <p className='font-normal sm:text-xl text-xs italic '>Salut, moi c’est Nolwen ! </p>
-                  <p className=' font-thin'>Apprenante <span className='font-bold sm:text-4xl text-2xl'>développeuse</span> full stack à <a target="_blank" href="https://adatechschool.fr" className=' underline'>ADA Tech School</a>, <span className='font-bold sm:text-4xl text-2xl'>designer</span> de formation. </p>
+                  <p className='  font-normal sm:text-xl text-xs italic '>Salut, moi c’est Nolwen ! </p>
+                  <p className=' font-thin'>Apprenante <span className=' font-black sm:text-4xl text-2xl'>développeuse</span> full stack à <a target="_blank" href="https://adatechschool.fr" className=' underline'>ADA Tech School</a>, <span className='font-bold sm:text-4xl text-2xl'>designer</span> de formation. </p>
                 </div>
                 </div>
              {/*  </div> */}
