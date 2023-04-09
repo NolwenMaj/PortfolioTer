@@ -10,7 +10,7 @@ export default function Projects() {
 
 
   return (
-    <div id="sectionProjets " >
+    <div id="sectionProjets" >
       <div className="flex flex-col-reverse">
         
             { projets.map((projet) => ( 
@@ -69,8 +69,8 @@ export default function Projects() {
                   id="cropImage" 
                   className=" h-[30vh] mb-4 sm:mb-0 ml-8 sm:ml-0 sm:border-2 sm:max-w-[40%] sm:h-[80vh] sm:overflow-clip object-cover object-center" 
                   src={projet.image1}
-                  width ={2000} 
-                  height ={2000} 
+                  width ={3000} 
+                  height ={3000} 
                   alt="visuel principal de l'article"
                 /> 
                 {/*</a> */} 
