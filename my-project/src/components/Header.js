@@ -6,13 +6,13 @@ import { mdiArrowUp } from '@mdi/js';
 
 export default function Header (){
     return(
-      <div className='font-display fixed sm:top-6 top-2 right-2 sm:right-6 z-10 text-[10px] sm:text-sm flex flex-col sm:w-24 h-[95vh] w-16 justify-between items-end'>
-        <div className="">
+      <div className='space-x-4 font-display fixed sm:top-6 bottom-4 sm:right-6 z-10 text-sm flex-row flex sm:flex-col sm:h-[95vh] w-full justify-center sm:justify-between sm:items-end'>
+        <div className="flex flex-row space-x-4 sm:flex-col sm:w-24 sm:space-y-4 sm:space-x-0">
           <Link href="#sectionProjets">
-            <button className="w-full mb-2 sm:mb-4"> projets</button>
+            <button className="sm:w-full"> projets</button>
           </Link>
           <Link href="#sectionApropos">
-            <button className="w-full" >à propos</button>
+            <button className="sm:w-full" >à propos</button>
           </Link>
           </div>
           <Link href="#sectionTop">
