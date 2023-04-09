@@ -2,7 +2,8 @@ import Image from 'next/image';
 import Icon from '@mdi/react';
 import { mdiArrowTopRight } from '@mdi/js';
 
-export default function APropos(){
+
+export default function Infos(){
     return(
         <>
             <div id="sectionApropos" className="w-full min-h-screen flex py-12 justify-center">
