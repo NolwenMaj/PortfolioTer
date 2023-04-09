@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from "react";
 import Image from 'next/image'
 import data from '../object.json';
+import Icon from '@mdi/react';
+import { mdiArrowTopRight } from '@mdi/js';
+import { mdiLinkBoxVariant } from '@mdi/js';
 
 export default function Projects() {
   const [projets, setProjets] = useState(data); 
@@ -16,13 +19,28 @@ export default function Projects() {
                   <div  className='w-3/4 sm:w-[50%] text-xl text-[#F2511B] flex flex-col justify-center gap-2'>
                     <div className="flex flex-col flex-wrap gap-2">
                       <h1 className="text-4xl sm:text-6xl font-bold">{projet.title}</h1>
-                      <div className="flex flex-row items-center ">
-                        <h2 className="text-xl sm:text-2xl">{projet.type}</h2>
-                        <div className="ml-8 space-x-2 flex flex-row text-xs">
-                          {projet.github && <a target="_blank" href={projet.github}><button className="">{/* <input className="" type="image" src="../pictoGit.png" /> */}GIT</button></a>}
-                          {projet.link && <a target="_blank" href={projet.link}><button className="">SITE</button></a>}
+                      <div className="flex flex-row items-center space-x-2 ">
+                        <h2 className="text-xl sm:text-2xl mr-8">{projet.type}</h2>
+                        {projet.github && 
+                          <div className="flex flex-row">
+                            <Image 
+                                src ="/pictoGit.png"
+                                height={30}
+                                width={30}
+                                alt="logo Linkedin"/>
+                            <a target="_blank" href={projet.github}>
+                              <Icon className="hover:animate-bounce  text-black" path={mdiArrowTopRight} size={1} />
+                            </a>
+                          </div>}
+                        {projet.link && 
+                          <div className="flex flex-row">
+                            <Icon className=" text-black" path={mdiLinkBoxVariant} size={1.5} />
+                            <a target="_blank" href={projet.link}>
+                              <Icon className="hover:animate-bounce  text-black" path={mdiArrowTopRight} size={1} />
+                            </a>
+                          </div>}
                         </div>
-                      </div>
+                      
                       <p className="text-sm sm:text-lg font-light">{projet.year}{projet.colleagues && <span> - avec <a target="_blank" href={projet.linkColleagues}>{projet.colleagues}</a></span>} {projet.subtitle && <span> - {projet.subtitle}</span>}</p>
                       <div className='font-thin sm:text-base py-8 text-black text-xs'>
                         {projet.paragraphe1 && <p className="pt-2">{projet.paragraphe1}</p>}
@@ -48,7 +66,7 @@ export default function Projects() {
                   </div>
                 {/*<a target="_blank" href={`/${projet.title}`}> */}
                 <Image 
-                  id="testImage2" 
+                  id="cropImage" 
                   className=" h-[30vh] mb-4 sm:mb-0 ml-8 sm:ml-0 sm:border-2 sm:max-w-[40%] sm:h-[80vh] sm:overflow-clip object-cover object-center" 
                   src={projet.image1}
                   width ={2000} 

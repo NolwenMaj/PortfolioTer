@@ -2,9 +2,8 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Home from '@/components/Home'
-import Spaces from '@/components/Spaces'
 import Projects from '@/components/Projects'
-import Apropos from '@/components/apropos' 
+import APropos from '@/components/APropos'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,7 +19,7 @@ export default function Page() {
       <Header/>
       <Home/>
       <Projects/> 
-      <Apropos/>
+      <APropos/>
     </>
   )
 }

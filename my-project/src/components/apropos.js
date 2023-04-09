@@ -1,17 +1,36 @@
-export default function Apropos (){
+import Image from 'next/image';
+import Icon from '@mdi/react';
+import { mdiArrowTopRight } from '@mdi/js';
+
+export default function APropos (){
     return(
         <>
             <div id="sectionApropos" className="w-full min-h-screen flex py-12 justify-center">
                 <div className="flex flex-col justify-center items-center w-2/3 space-y-24">
                         <div className="flex sm:flex-row flex-col gap-4">
-                            <div className="flex sm:flex-row flex-col sm:items-center items-start gap-2">
-                                <h1 className="text-4xl text-[#F2511B] font-medium">A PROPOS </h1>
-                                <div className="flex flex-row sm:items-center items-start gap-2">
-                                    <a target="_blank" href="https://www.linkedin.com/in/nolwenmajorfrances/"><button className="text-sm w-24">LINKEDIN</button></a>
-                                    <a target="_blank" href="https://drive.google.com/file/d/1PCiAk6ux-_FsWSAgglAcyJUMBAPGfmCA/view?usp=sharing"><button className="text-sm w-24">CV</button></a>
-                                    <a target="_blank" href="https://github.com/NolwenMaj"><button className="text-sm w-24" >GITHUB</button></a>
+                            <div className="flex sm:flex-row flex-col sm:items-center items-start gap-6">
+                                    <h1 className="text-4xl text-[#F2511B] font-medium ">A PROPOS </h1>  
+                                    <div className="flex flex-row">
+                                        <Image 
+                                            src ="/pictoLinkedin.png"
+                                            height={30}
+                                            width={30}
+                                            alt="logo Linkedin"/>
+                                        <a target="_blank" href="https://www.linkedin.com/in/nolwenmajorfrances/"><Icon className="hover:animate-bounce" path={mdiArrowTopRight} size={1} /></a>
+                                    </div>
+                                    <div className="flex flex-row  font-semibold text-2xl">
+                                        <p>CV</p>
+                                        <a target="_blank" href="https://drive.google.com/file/d/1PCiAk6ux-_FsWSAgglAcyJUMBAPGfmCA/view?usp=sharing"><Icon className=" hover:animate-bounce" path={mdiArrowTopRight} size={1} /></a>
+                                    </div>
+                                    <div className="flex flex-row">
+                                        <Image 
+                                            src ="/pictoGit.png"
+                                            height={30}
+                                            width={30}
+                                            alt="logo Linkedin"/>
+                                        <a target="_blank" href="https://github.com/NolwenMaj"><Icon className="hover:animate-bounce" path={mdiArrowTopRight} size={1} /></a>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                         <div className="flex flex-col sm:grid sm:grid-cols-3 gap-12 font-thin ">
                         <div className="flex flex-col gap-4">
