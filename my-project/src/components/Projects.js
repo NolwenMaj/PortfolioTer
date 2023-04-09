@@ -10,8 +10,7 @@ export default function Projects() {
 
 
   return (
-    <div id="sectionProjets" >
-      <div className="flex flex-col-reverse">
+      <div  id="sectionProjets" className="flex flex-col-reverse sm:mt-[-80vh]">
         
             { projets.map((projet) => ( 
               <div key={projet.id}>
@@ -78,6 +77,6 @@ export default function Projects() {
             </div>
            ))}
          </div>
-    </div>
+
   );
 }
