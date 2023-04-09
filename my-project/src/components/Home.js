@@ -6,7 +6,7 @@ export default function Home(){
       <>
       <div className="absolute top-0" id="sectionTop"></div>
       <div  className='font-display relative h-screen flex justify-start' >
-        <div className='h-full w-full bg-[url("https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/backgroundPictos.jpg")] bg-cover bg-no-repeat bg-center'>
+        <div className='h-full w-full bg-[url("/background.png")] bg-cover bg-no-repeat bg-center'>
           <div  className=' bg-white/75 h-full w-full flex items-center justify-center'>
                 <div className='relative w-1/2 sm:w-1/2 p-8 sm:p-24 sm:space-x-8 space-y-4 flex flex-col sm:flex-row items-center bg-white rounded-2xl'>
                   <div className='sm:w-60 sm:h-60 w-30 h-30'>
