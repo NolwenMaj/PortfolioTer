@@ -67,10 +67,10 @@ export default function Projects() {
                 {/*<a target="_blank" href={`/${projet.title}`}> */}
                 <Image 
                   id="cropImage" 
-                  className=" h-[30vh] mb-4 sm:mb-0 ml-8 sm:ml-0 sm:border-2 sm:max-w-[40%] sm:h-[80vh] sm:overflow-clip object-cover object-center" 
+                  className=" h-[30vh] mb-4 sm:mb-0 ml-8 sm:ml-0 sm:border-2 sm:max-w-[40%] sm:h-[60vh] sm:overflow-clip object-cover object-bottom" 
                   src={projet.image1}
-                  width ={3000} 
-                  height ={3000} 
+                  width ={2000} 
+                  height ={2000} 
                   alt="visuel principal de l'article"
                 /> 
                 {/*</a> */} 
