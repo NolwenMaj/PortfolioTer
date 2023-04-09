@@ -1,11 +1,11 @@
-import Image from 'next/image'
-
+import Image from 'next/image';
+import Icon from '@mdi/react';
+import { mdiArrowDown } from '@mdi/js';
 
 export default function Home(){
     return(
       <>
-      <div className="absolute top-0" id="sectionTop"></div>
-      <div  className='font-display relative h-screen flex justify-start' >
+      <div  id="sectionTop" className='font-display h-screen' >
         <div className='h-full w-full bg-[url("https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/background.png")] bg-cover bg-no-repeat bg-center'>
           <div  className=' bg-white/75 h-full w-full flex items-center justify-center'>
                 <div className='relative w-1/2 sm:w-1/2 p-8 sm:p-24 sm:space-x-8 space-y-4 flex flex-col sm:flex-row items-center bg-white rounded-2xl'>
@@ -25,6 +25,9 @@ export default function Home(){
                 </div>
             </div>
         </div>
+      </div>
+      <div className="text-[#F2511B] animate-bounce absolute bottom-8 w-screen flex justify-center">
+        <Icon path={mdiArrowDown} size={4} />
       </div>
       </>
     )
