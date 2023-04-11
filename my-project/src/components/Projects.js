@@ -21,23 +21,20 @@ export default function Projects() {
                       <div className="flex flex-row items-center space-x-2 ">
                         <h2 className="text-xl sm:text-2xl mr-8">{projet.type}</h2>
                         {projet.github && 
-                          <div className="flex flex-row">
+                             <a target="_blank" href={projet.github} className="flex flex-row">
                             <Image 
                                 src ="/pictoGit.png"
                                 height={30}
                                 width={30}
                                 alt="logo Linkedin"/>
-                            <a target="_blank" href={projet.github}>
-                              <Icon className="hover:animate-bounce  text-black" path={mdiArrowTopRight} size={1} />
-                            </a>
-                          </div>}
+                              <Icon className="hover:animate-bounce invisible sm:visible  text-black" path={mdiArrowTopRight} size={1} />
+                            </a>}
                         {projet.link && 
-                          <div className="flex flex-row">
-                            <Icon className=" text-black" path={mdiLinkBoxVariant} size={1.5} />
-                            <a target="_blank" href={projet.link}>
-                              <Icon className="hover:animate-bounce  text-black" path={mdiArrowTopRight} size={1} />
+                            <a target="_blank" href={projet.link} className="flex flex-row">
+                              <Icon className=" text-black" path={mdiLinkBoxVariant} size={1.5} />
+                              <Icon className="hover:animate-bounce invisible sm:visible text-black" path={mdiArrowTopRight} size={1} />
                             </a>
-                          </div>}
+                          }
                         </div>
                       
                       <p className="text-sm sm:text-lg font-light">{projet.year}{projet.colleagues && <span> - avec <a target="_blank" href={projet.linkColleagues}>{projet.colleagues}</a></span>} {projet.subtitle && <span> - {projet.subtitle}</span>}</p>
