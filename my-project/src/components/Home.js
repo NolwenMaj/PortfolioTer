@@ -5,7 +5,7 @@ import { mdiArrowDown } from '@mdi/js';
 export default function Home(){
     return(
     <>
-      <div  id="sectionTop" className='font-display h-screen mb-20' >
+      <div  id="sectionTop" className='relative font-display h-screen ' >{/* mb-20 */}
         <div className='h-full w-full bg-[url("https://github.com/NolwenMaj/PortfolioTer/raw/main/my-project/public/background.png")] bg-cover bg-no-repeat bg-center'>
           <div  className=' bg-white/75 h-full w-full flex items-center justify-center'>
                 <div className='relative w-1/2 sm:w-1/2 p-8 sm:p-24 sm:space-x-8 space-y-4 flex flex-col sm:flex-row items-center bg-white rounded-2xl'>
@@ -25,7 +25,7 @@ export default function Home(){
                 </div>
             </div>
         </div>
-        <div className="text-[#F2511B] animate-bounce absolute bottom-8 w-screen flex justify-center">
+        <div className="text-[#F2511B] sm:animate-bounce sm:absolute sm:bottom-8 sm:w-screen sm:flex sm:justify-center hidden ">
         <Icon path={mdiArrowDown} size={4} />
         </div>
       </div>

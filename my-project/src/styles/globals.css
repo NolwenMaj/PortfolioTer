@@ -22,3 +22,7 @@ button:hover {
   border-top-left-radius :9999px;
   border-bottom-left-radius :9999px;
 }
+
+.dropdown:hover > .dropdown-content {
+	display: block;
+}
