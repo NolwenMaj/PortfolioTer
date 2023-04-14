@@ -1,7 +1,10 @@
 [
      {   
     "id" :1,
+
     "title" : "La Fabrique de la ville"  ,
+
+    "techno" : "mémoire",
     
     "type" : "engager une participation capacitante" ,
     
@@ -31,6 +34,8 @@
     "id" :2,
 
     "title" : "Les Récréateurs"  ,
+
+    "techno" : "design",
     
     "type" : "outils de participation citoyenne" ,
 
@@ -65,7 +70,10 @@
 },{
 
     "id" :3 ,
+
     "title" : "Les P’tits Jeux du Pavillon"  ,
+
+    "techno" : "design",
     
     "type" : "jeux" ,
     
@@ -85,8 +93,11 @@
     
 },{
     "id" :4,
+
     "title" : "Places aux Femmes"  ,
     
+    "techno" : "design",
+
     "type" : "jeu" ,
 
     "link": "https://ville-jeux.com/Places-aux-femmes.html#myCarousel",
@@ -113,8 +124,11 @@
     "id" :5,
 
     "title" : "Cadences.webflow"  ,
+
+    "techno" : "Webflow",
     
     "type" : "site web" ,
+
 
     "link": "https://cadences.webflow.io/",
     
@@ -135,6 +149,8 @@
     "id" :6 ,
 
     "title" : "Môla Môla"  ,
+
+    "techno" : "design",
     
     "type" : "jeu" ,
     
@@ -162,7 +178,10 @@
     
 },{
     "id" :7 ,
+
     "title" : "XO^4"  ,
+
+    "techno" : "Lua",
     
     "type" : "jeu vidéo" ,
 
@@ -190,6 +209,8 @@
     "id" :8 ,
 
     "title" : "Quelle grosse marade"  ,
+
+    "techno" : "JS",
     
     "type" : "page web" ,
 
@@ -213,12 +234,15 @@
     
 },{
     "id" :9 ,
+
     "title" : "Memory"  ,
+
+    "techno":"JS",
     
     "type" : "jeu numérique" ,
 
     "github" :"https://github.com/NolwenMaj/Memory",
-    
+
     "themes" : ["HTML","CSS","JS","Front","illustration"] ,
     
     "year" : 2022,
@@ -241,13 +265,15 @@
     "id" :10 ,
 
     "title" : "Tomato Timer"  ,
+
+    "techno" : "JS",
     
     "type" : "extension de navigateur Chrome" ,
 
     "github" :"https://github.com/NolwenMaj/projet_collectif_extension_navigateur-gregor-jeremy-nolwen",
     
     "themes" : ["HTML","CSS","JS","Front"] ,
-    
+
     "year" : 2023,
     
     "subtitle" :"dans le cadre de notre formation à ADA Tech School." ,
@@ -265,6 +291,8 @@
     "id" :11 ,
     
     "title" : "retrovibe"  ,
+
+    "techno" : "React",
 
     "link" : "https://retrovibes.herokuapp.com/home",
     

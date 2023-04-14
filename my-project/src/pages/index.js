@@ -5,6 +5,7 @@ import Home from '@/components/Home'
 import Projects from '@/components/Projects'
 import Informations from '@/components/Informations'
 import Navbar from '@/components/Navbar'
+import Contact from '@/components/Contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function Page() {
       {/* <Header/> */}
       <Projects/> 
       <Informations/>
+      <Contact/>
     </>
   )
 }
