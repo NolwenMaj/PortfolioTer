@@ -2,11 +2,9 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Home from "@/components/Home";
-import Projects from "@/components/Projects";
-import Informations from "@/components/Informations";
 import Navbar from "@/components/Navbar";
-import Contact from "@/components/Contact";
 import Allumettes from "@/components/Allumettes";
+import Motus from "@/components/Motus";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +23,8 @@ export default function games() {
         />
       </Head>
       <Navbar />
-      <Allumettes />
+      {/* <Allumettes /> */}
+      <Motus />
     </>
   );
 }
