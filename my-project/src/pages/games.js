@@ -23,8 +23,8 @@ export default function games() {
         />
       </Head>
       <Navbar />
-      {/* <Allumettes /> */}
-      <Motus />
+      <Allumettes />
+      {/*  <Motus /> */}
     </>
   );
 }

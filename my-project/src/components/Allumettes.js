@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 
 /* TO DO
-mise en page
-random first player
-add players
+1.mise en page
+2.add players
 */
 
 export default function Allumettes() {
@@ -12,7 +11,7 @@ export default function Allumettes() {
   const [matchesLeft, setMatchesLeft] = useState(50);
   const [players, setPlayers] = useState({
     matchesP1: 0,
-    stateP1: playerOn,
+    stateP1: "",
     matchesP2: 0,
     stateP2: "",
   });
@@ -20,6 +19,19 @@ export default function Allumettes() {
   useEffect(() => {
     checkIfWin();
   }, [matchesLeft]);
+
+  const randomFirstPlayer = () => {
+    let randomNumber = Math.random();
+    if (randomNumber <= 0.5) {
+      setPlayers((previousState) => {
+        return { ...previousState, stateP1: "", stateP2: playerOn };
+      });
+    } else {
+      setPlayers((previousState) => {
+        return { ...previousState, stateP2: "", stateP1: playerOn };
+      });
+    }
+  };
 
   const removeLessOrMoreMatches = (lessOrMore) => {
     if (lessOrMore == "more" && matches < 6 && matches < matchesLeft) {
@@ -71,7 +83,7 @@ export default function Allumettes() {
 
   return (
     <section>
-      <div className="flex flex-col items-center mt-12">
+      <div className="flex flex-col items-center mt-12 drop-shadow-sm">
         <div className="flex flex-col w-2/3 text-center items-center space-y-8">
           <h1> ALLUMETTES </h1>
           <p className="w-1/2">
@@ -79,6 +91,9 @@ export default function Allumettes() {
             joueu.r.euse.s ôtent obligatoirement entre 1 et 6 allumettes. Celui
             qui ôte la dernière allumette gagne.
           </p>
+          <button type="button" onClick={() => randomFirstPlayer()}>
+            Jouer
+          </button>
           <div className="flex flex-col space-y-16 items-center">
             <div className="flex flex-row space-x-16 items-center">
               <div className="flex flex-col space-y-4 items-center">
