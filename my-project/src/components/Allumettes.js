@@ -1,87 +1,73 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-/* 1. put value 
-2. chack player
-3.random forst player
-4.condition de gagne
+/* TO DO
+mise en page
+random first player
+add players
 */
 
 export default function Allumettes() {
-  const [playerOne, setPlayerOne] = useState({
-    matches: 0,
-    playing: "on",
-  });
-  const [playerTwo, setPlayerTwo] = useState({
-    matches: 0,
-    playing: "off",
-  });
+  const playerOn = "à toi de jouer !";
   const [matches, setMatches] = useState(1);
-  const [matchesLeft, setMatchesLeft] = useState(10);
-/*    const [players, setPlayers] = useState([
-    { id: 1, matches: 0, state: "on" },
-    { id: 2, matches: 0, state: "off" },
-  ]) */
+  const [matchesLeft, setMatchesLeft] = useState(50);
+  const [players, setPlayers] = useState({
+    matchesP1: 0,
+    stateP1: playerOn,
+    matchesP2: 0,
+    stateP2: "",
+  });
 
-  const turnPlayer = () => {
-    if (playerOne.playing == "on") {
-      setPlayerOne((previousState) => {
-        return { ...previousState, playing: "off" };
-      });
-      setPlayerTwo((previousState) => {
-        return { ...previousState, playing: "on" };
-      });
-    } else {
-      setPlayerTwo((previousState) => {
-        return { ...previousState, playing: "off" };
-      });
-      setPlayerOne((previousState) => {
-        return { ...previousState, playing: "on" };
-      });
-    }
-  };
+  useEffect(() => {
+    checkIfWin();
+  }, [matchesLeft]);
 
-  const addMatchesToPlayers = () => {
-    if (playerOne.playing == "on") {
-      setPlayerOne((previousState) => {
-        return { ...previousState, matches: playerOne.matches + matches };
-      });
-    } else {
-      setPlayerTwo((previousState) => {
-        return { ...previousState, matches: playerTwo.matches + matches };
-      });
-    }
-  };
-
-  const checkIfWin = () => {
-    if (matchesLeft === 0) {
-      if (playerOne.playing == "on") {
-        setPlayerOne((previousState) => {
-          return { ...previousState, playing: "Winner !" };
-        });
-      } else if (playerTwo.playing == "on") {
-        setPlayerTwo((previousState) => {
-          return { ...previousState, playing: "Winner !" };
-        });
-      }
-    } else {
-      setMatches(1);
-    }
-  };
-
-  function btnClicked() {
-    setMatchesLeft(matchesLeft - matches);
-    addMatchesToPlayers();
-    checkIfWin()
-    turnPlayer();
-  }
-
-  function removeLessOrMoreMatches(lessOrMore) {
+  const removeLessOrMoreMatches = (lessOrMore) => {
     if (lessOrMore == "more" && matches < 6 && matches < matchesLeft) {
       setMatches(matches + 1);
     } else if (lessOrMore == "less" && matches > 1) {
       setMatches(matches - 1);
     }
-  }
+  };
+
+  const moveMatches = () => {
+    setMatchesLeft(matchesLeft - matches);
+    if (players.stateP1 == playerOn) {
+      setPlayers((previousState) => {
+        return { ...previousState, matchesP1: players.matchesP1 + matches };
+      });
+    } else {
+      setPlayers((previousState) => {
+        return { ...previousState, matchesP2: players.matchesP2 + matches };
+      });
+    }
+  };
+
+  const checkIfWin = () => {
+    if (matchesLeft === 0 && players.stateP1 === playerOn) {
+      setPlayers((previousState) => {
+        return { ...previousState, stateP1: "A gagné !", stateP2: "" };
+      });
+    } else if (matchesLeft === 0 && players.stateP2 === playerOn) {
+      setPlayers((previousState) => {
+        return { ...previousState, stateP2: "A gagné !", stateP1: "" };
+      });
+    } else {
+      turnPlayer();
+      setMatches(1);
+    }
+  };
+
+  const turnPlayer = () => {
+    if (players.stateP1 == playerOn) {
+      setPlayers((previousState) => {
+        return { ...previousState, stateP1: "", stateP2: playerOn };
+      });
+    } else {
+      setPlayers((previousState) => {
+        return { ...previousState, stateP2: "", stateP1: playerOn };
+      });
+    }
+  };
 
   return (
     <section>
@@ -95,17 +81,20 @@ export default function Allumettes() {
           </p>
           <div className="flex flex-col space-y-16 items-center">
             <div className="flex flex-row space-x-16 items-center">
-              <p>
-                Player One : {playerOne.matches} matches{" "}
-                <b>{playerOne.playing}</b>
-              </p>
+              <div className="flex flex-col space-y-4 items-center">
+                <p>
+                  Joueur.eus.e 1 <b>{players.stateP1}</b>
+                </p>
+                <p>{players.matchesP1} allumettes</p>
+              </div>
               <h2>{matchesLeft} allumettes restantes</h2>
-              <p>
-                Player Two : {playerTwo.matches} matches{" "}
-                <b>{playerTwo.playing}</b>
-              </p>
+              <div className="flex flex-col space-y-4 items-center">
+                <p>
+                  Joueur.eus.e 2 <b>{players.stateP2}</b>
+                </p>
+                <p>{players.matchesP2} allumettes</p>
+              </div>
             </div>
-            <p id="turnsAndWinner"></p>
             <div className="flex flex-row space-x-4 items-center">
               <button
                 type="button"
@@ -120,47 +109,13 @@ export default function Allumettes() {
               >
                 +
               </button>
-              <button type="button" onClick={() => btnClicked()}>
+              <button type="button" onClick={() => moveMatches()}>
                 remove
               </button>
             </div>
           </div>
         </div>
       </div>
-      {/*       <button class="buttons" id="playNow" onclick=" initialisation()">
-          {" "}
-          Jouons !{" "}
-        </button>
-      </div>
-      <div id="input">
-        <label class="texteBasique" for="jeu" id="min">
-          {" "}
-          1 inférieur à{" "}
-        </label>
-        <input
-          id="jeu"
-          type="number"
-          name="jeu"
-          min="1"
-          max="6"
-          autocomplete="off"
-          onfocus=" "
-        ></input>
-        <label class="texteBasique" for="jeu" id="max">
-          {" "}
-          inférieur à 6{" "}
-        </label>
-        <input
-          class="buttons"
-          type="submit"
-          id="send"
-          onclick="retirerAllumettes()"
-        ></input>
-      </div>
-      <div class="divs">
-        <p id="allumettesRestantes" class="texteBasique"></p>
-        <p id="joueurOn" class="texteBasique"></p>
-      </div> */}
     </section>
   );
 }
