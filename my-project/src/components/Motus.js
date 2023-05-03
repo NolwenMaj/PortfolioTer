@@ -22,9 +22,9 @@ export default function Motus() {
     charPlaced: "",
   });
 
-  useEffect(() => {
+  /*   useEffect(() => {
     checkMatch();
-  }, [tries.wordTried]);
+  }, [tries.wordTried]); */
 
   const btnClicked = () => {
     setTries((previousState) => {
@@ -36,11 +36,12 @@ export default function Motus() {
   };
 
   const addWordsTried = () => {
-    setWordsTried();
+    setWordsTried((wordsTried) => [...wordsTried, tries.wordTried]);
   };
 
   const checkMatch = () => {
     addWordsTried();
+    console.log(wordsTried);
     if (tries.wordTried === wordToGuess) {
       console.log(" C'est gagné !");
     } else {
@@ -141,7 +142,12 @@ export default function Motus() {
           <button type="button" onClick={() => btnClicked()}>
             Ok
           </button>
-          <p> mots essayés : {tries.wordTried}</p>
+          <p>
+            mots essayés :
+            {wordsTried.map((word) => (
+              <span key={wordsTried[word]}>{word} ,</span>
+            ))}
+          </p>
           <div id="infoOnTry">
             <p id="try"></p>
             <p id="well"></p>
