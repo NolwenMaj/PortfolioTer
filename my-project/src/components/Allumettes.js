@@ -83,8 +83,8 @@ export default function Allumettes() {
 
   return (
     <section>
-      <div className="flex flex-col items-center mt-12 drop-shadow-sm">
-        <div className="flex flex-col w-2/3 text-center items-center space-y-8">
+      <div className="flex flex-col items-center mt-12">
+        <div className="flex flex-col  w-3/4 text-center items-center space-y-8 bg-white p-12 rounded-xl">
           <h1> ALLUMETTES </h1>
           <p className="w-1/2">
             Il y a un tas de 50 allumettes. Chacun à son tour, les
@@ -125,7 +125,7 @@ export default function Allumettes() {
                 +
               </button>
               <button type="button" onClick={() => moveMatches()}>
-                remove
+                enlever
               </button>
             </div>
           </div>
