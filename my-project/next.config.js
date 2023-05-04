@@ -10,12 +10,16 @@ module.exports = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'github.com',
-        pathname: '/NolwenMaj/PortfolioTer/raw/main/my-project/public/**',
+        protocol: "https",
+        hostname: "github.com",
+        pathname: "/NolwenMaj/PortfolioTer/raw/main/my-project/public/**",
+      },
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+        pathname:
+          "/adatechschool/projet-collectif-microblogging-Hanine-Alice-Nolwen/main/public/**",
       },
     ],
   },
-}
-
-
+};

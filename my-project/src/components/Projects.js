@@ -11,7 +11,6 @@ export default function Projects() {
 
   return (
       <div className="flex flex-col-reverse">
-        
             { projets.map((projet) => ( 
               <div id={`section_${projet.id}`} key={projet.id}>
                 <div  className="font-display flex sm:flex-row sm:pl-32 sm:py-10 flex-col-reverse items-center sm:justify-between my-20"> 
