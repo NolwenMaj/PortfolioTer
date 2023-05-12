@@ -96,7 +96,7 @@ export default function Allumettes() {
           </button>
           <div className="flex flex-col space-y-16 items-center">
             <div className="flex flex-row space-x-16 items-center">
-              <div className="flex flex-col space-y-4 items-center">
+              <div className="flex flex-col space-y-4 items-center justify-between">
                 <p>
                   Joueur.eus.e 1 <b>{players.stateP1}</b>
                 </p>
