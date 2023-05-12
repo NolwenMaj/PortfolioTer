@@ -6,78 +6,185 @@ import { useState, useEffect } from "react";
 */
 
 export default function Allumettes() {
-  const playerOn = "à toi de jouer !";
-  const [matches, setMatches] = useState(1);
-  const [matchesLeft, setMatchesLeft] = useState(50);
-  const [players, setPlayers] = useState({
-    matchesP1: 0,
-    stateP1: "",
-    matchesP2: 0,
-    stateP2: "",
+  const p1plays = "Au tour de Joueur.euse 1 !";
+  const p1wins = "Joueur.euse 1 a gagné !";
+  const p2plays = "Au tour de Joueur.euse 2 !";
+  const p2wins = "Joueur.euse 2 a gagné !";
+
+  const [game, setGame] = useState({
+    matchesToRemove: 1,
+    matchesLeft: 50,
+    matchesPlayer1: 0,
+    matchesPlayer2: 0,
+    state: "",
+    intro: true,
   });
 
   useEffect(() => {
     checkIfWin();
-  }, [matchesLeft]);
+  }, [game.matchesLeft]);
+
+  const startGame = () => {
+    randomFirstPlayer();
+    setGame({
+      matchesToRemove: 1,
+      matchesLeft: 50,
+      matchesPlayer1: 0,
+      matchesPlayer2: 0,
+      state: "",
+      intro: false,
+    });
+    return;
+  };
 
   const randomFirstPlayer = () => {
     let randomNumber = Math.random();
     if (randomNumber <= 0.5) {
-      setPlayers((previousState) => {
-        return { ...previousState, stateP1: "", stateP2: playerOn };
+      setGame((previousState) => {
+        return { ...previousState, state: p1plays };
       });
     } else {
-      setPlayers((previousState) => {
-        return { ...previousState, stateP2: "", stateP1: playerOn };
+      setGame((previousState) => {
+        return { ...previousState, state: p2plays };
       });
     }
   };
 
   const removeLessOrMoreMatches = (lessOrMore) => {
-    if (lessOrMore == "more" && matches < 6 && matches < matchesLeft) {
-      setMatches(matches + 1);
-    } else if (lessOrMore == "less" && matches > 1) {
-      setMatches(matches - 1);
+    if (
+      lessOrMore == "more" &&
+      game.matchesToRemove < 6 &&
+      game.matchesToRemove < game.matchesLeft
+    ) {
+      setGame((previousState) => {
+        return { ...previousState, matchesToRemove: game.matchesToRemove + 1 };
+      });
+    } else if (lessOrMore == "less" && game.matchesToRemove > 1) {
+      setGame((previousState) => {
+        return { ...previousState, matchesToRemove: game.matchesToRemove - 1 };
+      });
     }
   };
 
   const moveMatches = () => {
-    setMatchesLeft(matchesLeft - matches);
-    if (players.stateP1 == playerOn) {
-      setPlayers((previousState) => {
-        return { ...previousState, matchesP1: players.matchesP1 + matches };
+    setGame((previousState) => {
+      return {
+        ...previousState,
+        matchesLeft: game.matchesLeft - game.matchesToRemove,
+      };
+    });
+    if (game.state === p1plays) {
+      setGame((previousState) => {
+        return {
+          ...previousState,
+          matchesPlayer1: game.matchesPlayer1 + game.matchesToRemove,
+        };
       });
     } else {
-      setPlayers((previousState) => {
-        return { ...previousState, matchesP2: players.matchesP2 + matches };
+      setGame((previousState) => {
+        return {
+          ...previousState,
+          matchesPlayer2: game.matchesPlayer2 + game.matchesToRemove,
+        };
       });
     }
   };
 
   const checkIfWin = () => {
-    if (matchesLeft === 0 && players.stateP1 === playerOn) {
-      setPlayers((previousState) => {
-        return { ...previousState, stateP1: "A gagné !", stateP2: "" };
-      });
-    } else if (matchesLeft === 0 && players.stateP2 === playerOn) {
-      setPlayers((previousState) => {
-        return { ...previousState, stateP2: "A gagné !", stateP1: "" };
-      });
+    if (game.matchesLeft === 0) {
+      if (game.state === p1plays) {
+        setGame((previousState) => {
+          return { ...previousState, state: p1wins };
+        });
+      } else {
+        setGame((previousState) => {
+          return { ...previousState, state: p2wins };
+        });
+      }
     } else {
       turnPlayer();
-      setMatches(1);
+      setGame((previousState) => {
+        return { ...previousState, matchesToRemove: 1 };
+      });
     }
   };
 
   const turnPlayer = () => {
-    if (players.stateP1 == playerOn) {
-      setPlayers((previousState) => {
-        return { ...previousState, stateP1: "", stateP2: playerOn };
+    if (game.state === p1plays) {
+      setGame((previousState) => {
+        return { ...previousState, state: p2plays };
       });
     } else {
-      setPlayers((previousState) => {
-        return { ...previousState, stateP2: "", stateP1: playerOn };
+      setGame((previousState) => {
+        return { ...previousState, state: p1plays };
       });
+    }
+  };
+
+  const BtnRemoveOrReplay = ({ state }) => {
+    if (state == p1plays || state == p2plays) {
+      return (
+        <button type="button" onClick={() => moveMatches()}>
+          enlever
+        </button>
+      );
+    } else if (state == p1wins || state == p2wins) {
+      return (
+        <button type="button" onClick={() => startGame()}>
+          rejouer
+        </button>
+      );
+    }
+  };
+
+  const View = ({ intro, state }) => {
+    if (intro === true) {
+      return (
+        <div className="flex flex-col text-center items-center space-y-8">
+          <h1> ALLUMETTES </h1>
+          <p className="w-1/2">
+            Il y a un tas de 50 allumettes. Chacun à son tour, les
+            joueu.r.euse.s ôtent obligatoirement entre 1 et 6 allumettes. Celui
+            qui ôte la dernière allumette gagne.
+          </p>
+          <button type="button" onClick={() => startGame()}>
+            Jouer
+          </button>
+        </div>
+      );
+    } else {
+      return (
+        <div className="flex flex-col space-y-16 items-center">
+          <p>{game.state}</p>
+          <div className="flex flex-row space-x-16 items-center">
+            <div className="flex flex-col space-y-4 items-center justify-between">
+              <p>Joueur.eus.e 1</p>
+              <p>{game.matchesPlayer1} allumettes</p>
+            </div>
+            <h2>{game.matchesLeft} allumettes restantes</h2>
+            <div className="flex flex-col space-y-4 items-center">
+              <p>Joueur.eus.e 2</p>
+              <p>{game.matchesPlayer2} allumettes</p>
+            </div>
+          </div>
+          <div className="flex flex-row space-x-4 items-center">
+            <button
+              type="button"
+              onClick={() => removeLessOrMoreMatches("less")}
+            >
+              -
+            </button>
+            <p>{game.matchesToRemove}</p>
+            <button
+              type="button"
+              onClick={() => removeLessOrMoreMatches("more")}
+            >
+              +
+            </button>
+            <BtnRemoveOrReplay state={game.state} />
+          </div>
+        </div>
+      );
     }
   };
 
@@ -85,50 +192,7 @@ export default function Allumettes() {
     <section>
       <div className="flex flex-col items-center mt-12">
         <div className="flex flex-col  w-3/4 text-center items-center space-y-8 bg-white p-12 rounded-xl">
-          <h1> ALLUMETTES </h1>
-          <p className="w-1/2">
-            Il y a un tas de 50 allumettes. Chacun à son tour, les
-            joueu.r.euse.s ôtent obligatoirement entre 1 et 6 allumettes. Celui
-            qui ôte la dernière allumette gagne.
-          </p>
-          <button type="button" onClick={() => randomFirstPlayer()}>
-            Jouer
-          </button>
-          <div className="flex flex-col space-y-16 items-center">
-            <div className="flex flex-row space-x-16 items-center">
-              <div className="flex flex-col space-y-4 items-center justify-between">
-                <p>
-                  Joueur.eus.e 1 <b>{players.stateP1}</b>
-                </p>
-                <p>{players.matchesP1} allumettes</p>
-              </div>
-              <h2>{matchesLeft} allumettes restantes</h2>
-              <div className="flex flex-col space-y-4 items-center">
-                <p>
-                  Joueur.eus.e 2 <b>{players.stateP2}</b>
-                </p>
-                <p>{players.matchesP2} allumettes</p>
-              </div>
-            </div>
-            <div className="flex flex-row space-x-4 items-center">
-              <button
-                type="button"
-                onClick={() => removeLessOrMoreMatches("less")}
-              >
-                -
-              </button>
-              <p>{matches}</p>
-              <button
-                type="button"
-                onClick={() => removeLessOrMoreMatches("more")}
-              >
-                +
-              </button>
-              <button type="button" onClick={() => moveMatches()}>
-                enlever
-              </button>
-            </div>
-          </div>
+          <View state={game.state} intro={game.intro} />
         </div>
       </div>
     </section>
