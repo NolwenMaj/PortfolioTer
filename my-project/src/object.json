@@ -356,5 +356,33 @@
     "image4" : "https://raw.githubusercontent.com/adatechschool/projet-collectif-microblogging-Hanine-Alice-Nolwen/main/public/outdoorAdventure6.png",
 
     "image5" : "https://raw.githubusercontent.com/adatechschool/projet-collectif-microblogging-Hanine-Alice-Nolwen/main/public/outdoorAdventure7.png"
+}, {
+    "id" :13 ,
+    
+    "title" : "Mon app de jeu de rôle"  ,
+
+    "techno" : "React Native",
+    
+    "type" : "application mobile" ,
+
+    "github" :"https://github.com/NolwenMaj/jdr2",
+    
+    "themes" : ["mobile","React Native","Expo"] ,
+    
+    "year" : 2023,
+    
+    "subtitle" :"dans le cadre de notre formation à ADA Tech School." ,
+    
+    "paragraphe1" :"Projet en cours d'une application pour gérer sa fiche perso lors de séances de jeux de rôle sur table." ,
+    
+    "paragraphe2":"Pour l'instant le MVP se concentre uniquement sur un jeu de rôle : Aria et je vais continuer à développer des fonctionnalités après les premiers retours utilisateur.ice.s.",
+
+    "image1" : "https://github.com/NolwenMaj/jdr2/assets/115166022/a0e6d93f-8542-4953-9911-3dbeef67784c",
+
+    "image2" : "https://github.com/NolwenMaj/jdr2/assets/115166022/a653c485-1c48-4244-b822-509805f99c83",
+
+    "image3" : "https://github.com/NolwenMaj/jdr2/assets/115166022/18e5de87-40c6-4c54-a38c-ace5db2a89d4",
+
+    "image4" : "https://github.com/NolwenMaj/jdr2/assets/115166022/7ff3e4b2-995b-4c63-aa5e-f386dc90164b"
 }
 ] 
