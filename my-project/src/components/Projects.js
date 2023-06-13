@@ -118,8 +118,9 @@ export default function Projects() {
                   ></img>
                 )}
                 {projet.video && (
-                  <div id="wrapper" className="sm:max-w-[45%] max-h-96">
+                  <div>
                     <ReactPlayer
+                      width={"110%"}
                       url={projet.video}
                       muted={true}
                       playing={true}
