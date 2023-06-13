@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import data from "../object.json";
 import Icon from "@mdi/react";
-import ReactPlayer from "react-player";
+import dynamic from "next/dynamic";
 import { mdiArrowTopRight } from "@mdi/js";
 import { mdiLinkBoxVariant } from "@mdi/js";
-
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 export default function Projects() {
   const [projets, setProjets] = useState(data);
 
