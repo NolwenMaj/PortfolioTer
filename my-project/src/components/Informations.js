@@ -4,6 +4,8 @@ import { mdiArrowTopRight } from '@mdi/js';
 import { mdiRayStartArrow } from '@mdi/js';
 import { mdiArrowURightBottom } from '@mdi/js';
 import { mdiGamepadSquare } from '@mdi/js';
+import { mdiMapMarkerAlert } from '@mdi/js';
+
 
 
 export default function Informations(){
@@ -17,7 +19,7 @@ export default function Informations(){
                                     <div className="flex flex-row space-x-10 sm:space-x-4">
                                      <div className="flex flex-row  font-semibold text-2xl">
                                         <p>CV</p>
-                                        <a target="_blank" href="https://drive.google.com/file/d/1PCiAk6ux-_FsWSAgglAcyJUMBAPGfmCA/view?usp=sharing"><Icon className=" hover:animate-bounce" path={mdiArrowTopRight} size={1} /></a>
+                                        <a target="_blank" href="https://drive.google.com/file/d/1Du1Wwb-06d6GmwmOcmC79Rvm4H3NAm5n/view?usp=sharing"><Icon className=" hover:animate-bounce" path={mdiArrowTopRight} size={1} /></a>
                                     </div>
                                     <div className="flex flex-row">
                                         <Image 
@@ -30,7 +32,7 @@ export default function Informations(){
                                     </div>
                             </div>
                         </div>
-                        <div className="flex flex-col sm:grid sm:grid-cols-3 gap-12 font-thin ">
+                        <div className="flex flex-col sm:grid sm:grid-cols-4 gap-10 font-thin ">
                         <div className="flex flex-col gap-4">
                             <h2 className=" font-bold  text-xl"><span><Icon path={mdiRayStartArrow} size={2}/></span>POINT DE DÉPART : LE DESIGN  </h2> 
                             <p> J’ai étudié le Design d’espace, orienté Eco-Social, à l’Ecole Supérieure d’Art et de Design de Valenciennes. La pédagogie orientée projet de l’école m’a permis de développer de multiples compétences en <b>graphisme</b>, <b>méthodologies de recherche</b>, <b>prototypage</b>, et <b>gestion de projet</b>. 
@@ -43,12 +45,17 @@ export default function Informations(){
                             <b> J’aime débugger, l’algorithmie, le clean code et la conception de base de donnée relationnelle.</b>
                             </p>
                         </div>
+                        
                         <div className="flex flex-col gap-4">
                             <h2 className=" font-bold  text-xl"><span><Icon path={mdiGamepadSquare} size={2} /></span>PAYSAGE : CONCEPTION LUDIQUE</h2>
                             <p> <b>J’aime les jeux : y jouer, en étudier, en critiquer, en conseiller, en illustrer et bien sûr en concevoir.</b> Ainsi, j’ai eu l’occasion développer un ensemble de compétences de la conception de la mécanique de jeu, au prototypage en passant par l'illustration lors de la conception et prototypage de plusieurs jeux :
                                 - le projet « Les Récréateurs » comprenant un ensemble de jeux pour faciliter la participation citoyenne en urbanisme, réalisés en binôme dans le cadre de mon Diplôme National Supérieur d'Expression Plastique.
                                 - une variété de prototypes de jeux sérieux, du jeu de carte à l'escape game lors de mon service civique auprès de l'association d'architectes de quartier ICI !
                                 - le jeu de société Mola Mola, en cours.</p>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <h2 className=" font-bold  text-xl"><span><Icon path={mdiMapMarkerAlert} size={2} /></span>PROCHAIN ARRÊT : L'ALTERNANCE DE MES RÊVES</h2>
+                            <p>Je cherche une alternance, en <b>contrat d'apprentissage</b>, d'un an à partir de septembre, au <b>rythme 4jours en entreprise / 1jour </b>(vendredi)<b> à l'école</b>. Je souhaite travailler pour des entreprise de <b>l'ESS, de la transition écologique ou dans les services publics</b>. N'hésitez pas à me contacter si mon profil vous parle !</p>
                         </div>
                     </div>
                 </div>
